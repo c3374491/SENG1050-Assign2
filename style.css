@@ -1,0 +1,150 @@
+/*
+style.css
+Ethan Davey | C3374491
+22/10/2021
+*/
+
+body{ /* Styling for the body element of the page */
+    background-image: url("images/background.jpg"); /* Sets the background image */
+    background-attachment: fixed; /* Stops the background from moving when scrolling on the page */
+    background-size: 100%; /* Sets the background image to resize based on the height of the window */
+    /* Source = https://www.pexels.com/photo/white-wall-paint-1260727/ */
+    margin-left: 1cm; /* Creates a 1cm left margin */
+    margin-right: 1cm;
+    color: rgb(25, 25, 25); /* Sets the colour of the text in the body */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font to be a specific style */
+}
+
+header{
+    text-align: center; /* Sets the text to align in the center */
+    font-family:'Trebuchet MS', sans-serif; /* Sets the font to be a specific style */
+    color: yellow; /* Sets the colour of the text in the body */
+    font-size: 35px; /* Sets the size of the font to 35px */
+}
+
+a{
+    color: blue; /* Sets the colour of the link to blue as default */
+    margin: 20px; /* Sets the margin of the link to be 20px */
+}
+a:hover{
+    color: green; /* Sets the colour of the link to green when hovered */
+    font-size: 50px; /* Sets the size of the font to 50px when hovered */
+}
+a:visited{
+    color: red; /* Sets the colour of the link to red when visited */
+}
+
+h1{
+    font-size: 55px; /* Sets the size of the font to 55px */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Sets the font to be a specific style */
+    text-transform: uppercase; /* Sets the text to be uppercase */
+    font-style: normal; /* sets the text to normal styling */
+}
+
+h2{
+    text-decoration: underline; /* Gives the text and underline */
+    text-transform: uppercase; /* Sets the text to be uppercase */
+}
+
+h3{
+    font-style: normal; /* sets the text to normal styling */
+}
+
+img{
+    width: 100%; /* Sets the width to as wide as the window is */
+    border: 3px white solid; /* Sets a border on the element */
+    float: left; /* Floats the element left */
+}
+
+address{
+    float: right; /* Floats the element right */
+}
+
+footer{
+    float: right; /* Floats the element right */
+}
+
+
+#bitLink{
+    font-size: 15px; /* Sets the size of the font to 15px */
+    margin: auto; /* Forces the margin to be set automatically */
+}
+#bitLink:hover{
+    font-size: 15px; /* Sets the size of the font to 15px */
+}
+
+#indexLink{ 
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font to be a specific style */
+    font-size: 15px; /* Sets the size of the font to 15px */
+    margin: auto; /* Forces the margin to be set automatically */
+}
+#indexLink:hover{
+    font-size: 15px; /* Sets the size of the font to 15px */
+}
+
+#ppLink{
+    font-size: 15px; /* Sets the size of the font to 15px */
+    margin: auto; /* Forces the margin to be set automatically */
+}
+#ppLink:hover{
+    font-size: 15px; /* Sets the size of the font to 15px */
+}
+
+#tacGenLink{
+    font-size: 15px; /* Sets the size of the font to 15px */
+    font-weight: 800; /* Sets the font weight to 800 or bold */ 
+    margin: auto; /* Forces the margin to be set automatically */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font to be a specific style */
+}
+#tacGenLink:hover{
+    font-size: 15px; /* Sets the size of the font to 15px */
+    font-weight: 800; /* Sets the font weight to 800 or bold */ 
+}
+
+#aboutLink{
+    font-size: 15px; /* Sets the size of the font to 15px */
+    margin: auto; /* Forces the margin to be set automatically */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font to be a specific style */
+}
+#aboutLink:hover{
+    font-size: 15px; /* Sets the size of the font to 15px */
+}
+
+#welcomeParagraph{
+    font-size: 20px; /* Sets the size of the font to 20px */
+}
+
+#aboutImg{
+    margin-left: auto; /* sets the left margin to auto */ 
+    margin-right: auto; /* sets the right margin to auto */ 
+    display: block; /* sets to display as a block */ 
+    width: 500px; /* Sets the width to 500px */
+    border: 2px white solid; /* Sets a border on the element */
+    float: none; /* sets the float to none */ 
+}
+
+#xsl{
+    text-align: center; /* Alligns text to the center */
+}
+
+
+
+.privacyPolicy{
+    font-style: italic; /* sets the text to italic styling */
+}
+
+.normalSpan{
+    font-style: normal; /* sets the text to normal styling */
+}
+
+.italicSpan{
+    font-style: italic; /* sets the text to italic styling */
+}
+
+.contact{
+    text-align: center;
+}
+
+.dataCollection{
+    text-align: center; /* Alligns text to the center */
+}

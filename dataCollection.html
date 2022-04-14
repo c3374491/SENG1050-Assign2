@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- Declares to the browser that this is a HTML document -->
+<html lang="en"> <!-- Opening HTML tag and declaring the page is English -->
+<!-- 
+dataCollection.html
+Ethan Davey | C3374491
+22/10/2021
+-->
+
+    <head> <!-- Creates the head element of the webpage -->
+        <meta charset="utf-8"/>
+        <title>Jims Cars | Sell Your Car</title> <!-- Title of the page -->
+        <link rel="stylesheet" href="style.css"> <!-- Calls the CSS sheet -->
+        <script src="main.js"></script>
+        <!-- Allows embedded styling -->
+        <style>
+            #mainText{text-align: center} /* Sets the text to align in the center */
+        </style>
+    </head> <!-- Closes the head element of the webpage -->
+
+    <body>
+        <header> <!-- Navigation bar-->
+            <a href="index.html">Home</a>
+            <a href="4x4s.xml">4x4s</a> <!-- Links to XML documents -->
+            <a href="sedans.xml">Sedans</a>
+            <a href="dataCollection.html">Sell Your Car</a>
+            <a href="termsAndConditions.html">Terms and Conditions</a>
+            <a href="privacyPolicy.html">Privacy Policy</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <hr> <!-- Horizontal line to serparate navigation bar and the page content -->
+        </header> <!-- Closes navigation bar -->
+
+        <div class="dataCollection"> <!-- Creates a div with the class "dataCollection" to hold the main content of the data collection page -->
+            <h1><span class="normalSpan">SELL YOUR CAR</span></h1> <!-- Main heading of the page -->
+            <!-- Creates a form element with the name "dataCollection", tells it what action it should have and what should happen on submit-->
+            <form name="dataCollection" action="http://jkorpela.fi/cgi-bin/echo.cgi" onsubmit="return validateForm()"> 
+                <h3>Personal Information:</h3>
+                <!-- Label and input for form element including the name, type and id-->
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName"><br>
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <!-- Form element that only accepts numbers -->
+                <label for="carsListed">Number of cars previously submitted:</label><br>
+                <input type="number" id="carsListed" name="carsListed" min="0"><br>
+                <!-- Radio buttons form elements -->
+                <label>Have you bought a car in the last 5 years?</label><br>
+                <input type="radio" id="yes" name="boughtCar" value="yes" ><label for="yes">Yes</label>
+                <input type="radio" id="no" name="boughtCar" value="no" checked><label for="no">No</label><br>
+
+                <h3>Vehicle Information:</h3>
+
+                <label for="make">Car Make:</label><br>
+                <input type="text" id="make" name="make"><br>
+                <label for="model">Car Model:</label><br>
+                <input type="text" id="model" name="model"><br>
+                <!-- Drop down form element -->
+                <label for="carCategory">Car Category:</label><br>
+                <select id="carCategory" name="carCategory">
+                    <option value="4x4">4x4</option>
+                    <option value="sedan">Sedan</option>
+                </select><br>
+                <label for="engine">Engine size:</label><br>
+                <input type="text" id="engine" name="engine"><br>
+                <label>Fuel Type:</label><br>
+                <input type="radio" id="petrol" name="fuelType" value="petrol" checked><label for="petrol">Petrol</label>
+                <input type="radio" id="diesel" name="fuelType" value="diesel" ><label for="diesel">Diesel</label>
+                <input type="radio" id="autoGas" name="autoGas" value="autoGas" ><label for="autoGas">AutoGas</label><br>
+                <label for="seats">Number of Seats:</label><br>
+                <input type="number" id="seats" name="seats" min="1"><br>
+                <label for="towingCapacity">Towing Capacity:</label><br>
+                <input type="number" id="towingCapacity" name="towingCapacity" min="0"><br>
+                <label for="safetyRating">Safety Rating:</label><br>
+                <input type="number" id="safetyRating" name="safetyRating" min="0" max="5" step="1"><br>               
+                <label>Additional Options:</label><br>
+                <!-- Checkbox form elements -->
+                <input type="checkbox" id="option1" name="option1" value="Included Extras">
+                <label for="option1"> Extras Included</label><br>
+                <input type="checkbox" id="option2" name="option2" value="Accept Jims Coupons">
+                <label for="option2"> Accept Jims Coupons</label><br>
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description"><br>
+                <label for="imageOfCar">Upload Images of the Car:</label><br>
+                <input type="file" id="imageOfCar" name="imageOfCar"><br>
+                <label for="price">How much would you like to sell your car for?</label><br>
+                <input type="number" id="price" name="price" min="0"><br>
+                <br>
+                <!-- Submit and reset form buttons-->
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+
+        <footer> <!-- Footer of the webpage -->
+            <address> <!-- Address tag contains the contact information of the author (Me: Ethan Davey) -->
+                <em>&copy; Ethan Davey 2021 | c3374491@uon.edu.au</em> <!-- &copy; is how to display the copyright symbol in HTML -->
+            </address> 
+        </footer>
+    </body>
+</html>
+
+

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl.xsl"?>
+
+<!-- 
+4x4s.xml
+Ethan Davey | C3374491
+22/10/2021
+-->
+
+<!DOCTYPE category [
+    <!ELEMENT category (car+)>
+    <!ELEMENT car (model, description, cost, make, engine, seats, towingCapacity, safetyRating, extras+, couponCode?, reviews*, image+, url)>
+    <!ELEMENT model (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT make (#PCDATA)>
+    <!ELEMENT engine (#PCDATA)>
+    <!ELEMENT seats (#PCDATA)>
+    <!ELEMENT towingCapacity (#PCDATA)>
+    <!ELEMENT safetyRating (#PCDATA)>
+    <!ELEMENT extras (extra*)>
+    <!ELEMENT extra (option, additionalCost)>
+    <!ELEMENT option (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT couponCode (#PCDATA)>
+    <!ELEMENT reviews (review*)>
+    <!ELEMENT review (reviewRating, comment, customerName)>
+    <!ELEMENT reviewRating (#PCDATA)>
+    <!ELEMENT comment (#PCDATA)>
+    <!ELEMENT customerName (#PCDATA)>
+    <!ELEMENT image (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+    <!ENTITY vf "victor fleming">
+]>
+<category>
+    <car>
+        <model>hilux</model>
+        <description>Amazingly capable offroad vehicle with 4x4 drivetrain!</description>
+        <cost>$58,990</cost>
+        <make>&vf;</make>
+        <engine>4 Cylinder 2.8L Diesel</engine>
+        <seats>5</seats>
+        <towingCapacity>3500kg</towingCapacity>
+        <safetyRating>***</safetyRating>
+        <extras>
+            <extra>
+                <option>A/T Tyres</option>
+                <additionalCost>$1,200</additionalCost>
+            </extra>
+            <extra>
+                <option>Seat Warmers</option>
+                <additionalCost>$6,320</additionalCost>
+            </extra>
+        </extras>
+        <couponCode>BUSINESS10</couponCode>
+        <reviews>
+            <review>
+                <reviewRating>*/*****</reviewRating>
+                <comment>Over priced garbage! Do NOT buy! Bought 2 months ago and the wheel fell off after I changed the tyre. IT SHOULD SAY YOU NEED ALL 5 LUGS ON THE WHEEL!!!</comment>
+                <customerName>Daren Hibby</customerName>
+            </review>
+            <review>
+                <reviewRating>****/*****</reviewRating>
+                <comment>Great work car! Kept the boys out of trouble on site and has been a great material mover. Clutch is a bit weak and burnt out after about 2 months, but I'm not sure the boys aren't to blame for that.</comment>
+                <customerName>Gavin Phillips</customerName>
+            </review>
+        </reviews>
+        <image>images/Hilux.jpg</image>
+        <!-- src=https://upload.wikimedia.org/wikipedia/commons/1/1b/2016_Toyota_HiLux_Invincible_D-4D_4WD_2.4_Front.jpg -->
+        <url>https://www.toyota.com.au/hilux</url>
+    </car>
+
+    <car>
+        <model>Everest</model>
+        <description>Family wagon meets offroad beast! Check out the best of both worlds with this amazing vehicle!</description>
+        <cost>$65,590</cost>
+        <make>FORD</make>
+        <engine>5 Cylinder 3.2L Turbo Diesel</engine>
+        <seats>7</seats>
+        <towingCapacity>3100kg</towingCapacity>
+        <safetyRating>*****</safetyRating>
+        <extras>
+            <extra>
+                <option>Alloy wheels</option>
+                <additionalCost>$2,500</additionalCost>
+            </extra>
+        </extras>
+        <couponCode />
+        <reviews>
+            <review>
+                <reviewRating>*****/*****</reviewRating>
+                <comment>Great car! Was perfect for a family trip to Fraser Island! Best purchase ever! Friendly and knowledgeable staff.</comment>
+                <customerName>Chris Strickland</customerName>
+            </review>
+        </reviews>
+        <image>images/Everest.PNG</image>
+        <!-- src= Photo taken by me (Ethan Davey) -->
+        <url>https://www.ford.com.au/suv/everest/</url>
+    </car>
+
+    <car>
+        <model>Navara</model>
+        <description>Nissan's latest and greatest in 4x4 technology combined with Australia's love for utes? You're looking at it! The all-new 2021 Nissan Navara features an amazing extras package and off-road capabilities to match.</description>
+        <cost>$49,990</cost>
+        <make>Nissan</make>
+        <engine>4 Cylinder 2.3L Twin Turbo Diesel</engine>
+        <seats>5</seats>
+        <towingCapacity>3500kg</towingCapacity>
+        <safetyRating>****</safetyRating>
+        <extras>
+            <extra>
+                <option>3" Lift Kit</option>
+                <additionalCost>$4,500</additionalCost>
+            </extra>
+            <extra>
+                <option>A/T Tyres</option>
+                <additionalCost>$2,000</additionalCost>
+            </extra>
+            <extra>
+                <option>Snorkel</option>
+                <additionalCost>$1,500</additionalCost>
+            </extra>
+            <extra>
+                <option>Fender Flares</option>
+                <additionalCost>$800</additionalCost>
+            </extra>
+            <extra>
+                <option>Canvas Seat Covers</option>
+                <additionalCost>$2,000</additionalCost>
+            </extra>
+            <extra>
+                <option>True-fit Floor Mats</option>
+                <additionalCost>$1,000</additionalCost>
+            </extra>
+            <extra>
+                <option>Alloy Bullbar</option>
+                <additionalCost>$4,200</additionalCost>
+            </extra>
+            <extra>
+                <option>Tow Bar</option>
+                <additionalCost>$2,200</additionalCost>
+            </extra>
+        </extras>
+        <couponCode />
+        <reviews>
+            <review>
+                <reviewRating>*/*****</reviewRating>
+                <comment>Absolute GARBAGE! Had this car for about a year and every month was problem after problem. The car almost spent more time in the workshop then on the road. Nissan refused to fix things properly and any problem I did have returned after a couple of weeks. DO NOT BUY! I even bought all the extras and they are overpriced junk!</comment>
+                <customerName>Tyler Bennet</customerName>
+            </review>
+            <review>
+                <reviewRating>*/*****</reviewRating>
+                <comment>Crap car. Don't buy it. Get something good, like a Hilux.</comment>
+                <customerName>Mason Dempsey</customerName>
+            </review>
+            <review>
+                <reviewRating>**/*****</reviewRating>
+                <comment>Got my first ever loan to buy this car. Started costing me more money to fix it then I was earning. Piece of crap. Don't buy.</comment>
+                <customerName>Mark Bishop</customerName>
+            </review>
+        </reviews>
+        <image>images/Navara.jpg</image>
+        <!-- src= https://www-asia.nissan-cdn.net/content/dam/Nissan/AU/Images/video-thumbs/vam/DESKTOP_BANNER_-_3000x1200.jpg -->
+        <url>https://www.nissan.com.au/vehicles/browse-range/navara.html</url>
+    </car>
+</category>

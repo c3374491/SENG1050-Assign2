@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- Tells the browser that this is an XML document -->
+
+<!-- 
+template.xml
+Ethan Davey | C3374491
+22/10/2021
+-->
+
+<!DOCTYPE category [ <!-- Start of the DTD -->
+    <!ELEMENT category (car+)> <!-- Outlining that the category is made up of one or more items -->
+    <!ELEMENT car (model, description, cost, make, engine, seats, towingCapacity, safetyRating, extras+, couponCode?, reviews*, image+, url)> <!-- Outlining what the car is made up of and what restrictions are in place -->
+    <!ELEMENT model (#PCDATA)> <!-- This element is only made up of one item -->
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT make (#PCDATA)>
+    <!ELEMENT engine (#PCDATA)>
+    <!ELEMENT seats (#PCDATA)>
+    <!ELEMENT towingCapacity (#PCDATA)>
+    <!ELEMENT safetyRating (#PCDATA)>
+    <!ELEMENT extras (extra+)> <!-- This element is made up of a zero or more items -->
+    <!ELEMENT extra (option, additionalCost)>
+    <!ELEMENT option (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT couponCode (#PCDATA)>
+    <!ELEMENT reviews (review*)>
+    <!ELEMENT review (reviewRating, comment, customerName)>
+    <!ELEMENT reviewRating (#PCDATA)>
+    <!ELEMENT comment (#PCDATA)>
+    <!ELEMENT customerName (#PCDATA)>
+    <!ELEMENT image (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+
+]>
+
+<!-- XML Template Layout-->
+<category>
+    <car>
+        <model></model>
+        <description></description>
+        <cost></cost>
+        <make></make>
+        <engine></engine>
+        <seats></seats>
+        <towingCapacity></towingCapacity>
+        <safetyRating></safetyRating>
+        <extras>
+            <extra>
+                <option></option>
+                <additionalCost></additionalCost>
+            </extra>
+        </extras>
+        <couponCode></couponCode>
+        <reviews>
+            <review>
+                <reviewRating></reviewRating>
+                <comment></comment>
+                <customerName></customerName>
+            </review>
+        </reviews>
+        <image></image>
+        <url></url>
+    </car>
+</category>

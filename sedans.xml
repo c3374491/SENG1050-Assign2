@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl.xsl"?>
+
+<!-- 
+sedans.xml
+Ethan Davey | C3374491
+22/10/2021
+-->
+
+<!DOCTYPE category [
+    <!ELEMENT category (car+)>
+    <!ELEMENT car (model, description, cost, make, engine, seats, towingCapacity, safetyRating, extras+, couponCode?, reviews*, image+, url)>
+    <!ELEMENT model (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT make (#PCDATA)>
+    <!ELEMENT engine (#PCDATA)>
+    <!ELEMENT seats (#PCDATA)>
+    <!ELEMENT towingCapacity (#PCDATA)>
+    <!ELEMENT safetyRating (#PCDATA)>
+    <!ELEMENT extras (extra*)>
+    <!ELEMENT extra (option, additionalCost)>
+    <!ELEMENT option (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT couponCode (#PCDATA)>
+    <!ELEMENT reviews (review*)>
+    <!ELEMENT review (reviewRating, comment, customerName)>
+    <!ELEMENT reviewRating (#PCDATA)>
+    <!ELEMENT comment (#PCDATA)>
+    <!ELEMENT customerName (#PCDATA)>
+    <!ELEMENT image (#PCDATA)>
+    <!ATTLIST image logo_height CDATA #FIXED "150">
+    <!ATTLIST image logo_width CDATA #FIXED "150">
+    <!ELEMENT url (#PCDATA)>
+
+]>
+
+<category>
+    <car>
+        <model>HSV Clubsport Commodore</model>
+        <description>What can you say about a car as iconic as a Holden Commodore? Nothing. It speaks for itself.</description>
+        <cost>$66,990</cost>
+        <make>HOLDEN</make>
+        <engine>6.2L V8 Petrol</engine>
+        <seats>5</seats>
+        <towingCapacity>1590kg</towingCapacity>
+        <safetyRating>*****</safetyRating>
+        <extras>
+            <extra>
+                <option>Sport Tyres</option>
+                <additionalCost>$3,400</additionalCost>
+            </extra>
+        </extras>
+        <couponCode />
+        <reviews>
+            <review>
+                <reviewRating>*****/*****</reviewRating>
+                <comment>WOW! I was skeptical at first but WOW! What an amazing car! Just broke my land speed record of 240km/h but the policeman wasn't too happy. While I won't see that exact car again #crushed, I will be seeing another new one parked in my driveway next week!</comment>
+                <customerName>Darren White</customerName>
+            </review>
+        </reviews>
+        <image>images/Commodore.jpg</image>
+        <!-- src=https://www.hsv.com.au/images/see/clubsportr8lsa/clubsportr8lsa-exterior-1.jpg -->
+        <url>https://www.hsv.com.au/see/clubsportr8lsa/</url>
+    </car>
+
+    <car>
+        <model>Baleno</model>
+        <description>Affordable, comfortable, reliable. Look no further with the Suzuki Baleno!</description>
+        <cost>$16,990</cost>
+        <make>SUZUKI</make>
+        <engine>1.4L 4 Cylinder Petrol</engine>
+        <seats>5</seats>
+        <towingCapacity>1000kg</towingCapacity>
+        <safetyRating>****</safetyRating>
+        <extras>
+            <extra>
+                <option>Alloy Wheels</option>
+                <additionalCost>$1,200</additionalCost>
+            </extra>
+        </extras>
+        <couponCode>FLEET5</couponCode>
+        <reviews>
+            <review>
+                <reviewRating>*****/*****</reviewRating>
+                <comment>Great cheap, small car! Perfect for my kid to learn in!</comment>
+                <customerName>Kylie Osborn</customerName>
+            </review>
+        </reviews>
+        <image>images/Baleno.png</image>
+        <!-- src=https://www.suzuki.com.au/sites/default/files/styles/model_variant_summary_default/public/image/Baleno-F34-Hero_WhitebaseModel_3160x1720.png -->
+        <url>https://www.suzuki.com.au/vehicles/hatch/baleno</url>
+    </car>
+
+    <car>
+        <model>A4</model>
+        <description>What can you say about a car as iconic as a Holden Commodore? Nothing. It speaks for itself.</description>
+        <cost>$66,990</cost>
+        <make>AUDI</make>
+        <engine>4 Cylinder 2L Turbo Diesel</engine>
+        <seats>5</seats>
+        <towingCapacity>1700kg</towingCapacity>
+        <safetyRating>*****</safetyRating>
+        <extras>
+            <extra>
+                <option>Custom Interior Trim</option>
+                <additionalCost>$15,000</additionalCost>
+            </extra>
+        </extras>
+        <couponCode />
+        <reviews>
+            <review>
+                <reviewRating>*****/*****</reviewRating>
+                <comment>Perfect combination of comfort and class! Everyone seems to love it.</comment>
+                <customerName>Paul Fairweather</customerName>
+            </review>
+        </reviews>
+        <image>images/A4.jpg</image>
+        <!-- src=https://audimediacenter-a.akamaihd.net/system/production/media/77766/images/910025eb9db8aea52ec0a693c4e8c2e5d29230ea/A195681_blog.jpg?1595847098 -->
+        <url>https://www.audi.com.au/au/web/en/models/a4/a4-sedan.html</url>
+    </car>
+</category>
